@@ -6,7 +6,7 @@ on:
   pull_request:
   
   Schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
+    - cron: "0 */6 * * *"  # Every 6 hours
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -26,4 +26,3 @@ jobs:
       - name: Run tests
         run: |
           pytest -m pytest
-          
